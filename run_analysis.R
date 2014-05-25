@@ -40,7 +40,7 @@ train_new1<-train[ ,grep("mean",names(train))]
 
 train_new1<-train_new1[ ,-grep("meanFreq",names(train_new1))]
 
-train_new2<-train[ ,grepl("std",names(train))]
+train_new2<-train[ ,grep("std",names(train))]
 
 train_new<-data.frame(train_new1,train_new2)
 
@@ -51,7 +51,7 @@ names(q)<-c("type")
 new_train<-data.frame(q,train_s,train_y,train_new)
 
 #View(new_train)
-#dim(new_train) : 7352 rows by 69 cols (63 for data and 3 for "type","subject","activity"
+#dim(new_train) # 7352 rows by 69 cols (66 for data and 3 for "type","subject","activity"
 
 #do as above for the test data
 
@@ -83,7 +83,7 @@ test_new1<-test[ ,grep("mean",names(test))]
 
 test_new1<-test_new1[ ,-grep("meanFreq",names(test_new1))]
 
-test_new2<-test[ ,grepl("std",names(test))]
+test_new2<-test[ ,grep("std",names(test))]
 
 test_new<-data.frame(test_new1,test_new2)
 
@@ -94,7 +94,7 @@ names(q)<-c("type")
 new_test<-data.frame(q,test_s,test_y,test_new)
 
 #View(new_test)
-#dim(new_test) # 2947 rows by 69 cols (63 for data and 3 for "type","subject","activity"
+#dim(new_test) # 2947 rows by 69 cols (66 for data and 3 for "type","subject","activity"
 
 #combine data to form new dataframe
 
@@ -139,7 +139,7 @@ names(tidy)<-append(c("subject","activity","activity_names"),names(all)[4:69])
 rownames(tidy) <- NULL
 
 #View(tidy)
-#dim(tidy) # 6 activities x 30 subjects = 180 rows and 69 cols (63 data + "subject", "activity", "activity_names") 
+#dim(tidy) # 6 activities x 30 subjects = 180 rows and 69 cols (66 data + "subject", "activity", "activity_names") 
 #names(tidy)
 
 #write tidy data to file
