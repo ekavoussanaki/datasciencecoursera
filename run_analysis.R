@@ -1,6 +1,6 @@
 #check if files exist within directory
 
-workingDir<-"/home/kele/Documents/Work/courses/coursera/dataprocessing/UCI HAR Dataset/";
+workingDir<-".";
 
 if(file.exists(workingDir)){
 
