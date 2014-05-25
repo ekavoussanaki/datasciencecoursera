@@ -51,7 +51,7 @@ names(q)<-c("type")
 new_train<-data.frame(q,train_s,train_y,train_new)
 
 #View(new_train)
-#dim(new_train) : 7352 rows by 69 cols (66 for data and 3 for "type","subject","activity"
+#dim(new_train) # 7352 rows by 69 cols (66 for data and 3 for "type","subject","activity"
 
 #do as above for the test data
 
