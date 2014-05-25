@@ -1,6 +1,6 @@
 #check if files exist within directory
 
-workingDir<-"/home/kele/Documents/Work/courses/coursera/dataprocessing/UCI HAR Dataset/";
+workingDir<-"./UCI HAR Dataset/";
 
 if(file.exists(workingDir)){
 
@@ -126,10 +126,6 @@ for(i in 1:30){
   }
 }
 
-#q<-read.table("features.txt")
-#names(q)<-c("num","variable")
-#names(test)<-q[["variable"]]
-
 #give tidy data cols a name
 
 names(tidy)<-append(c("subject","activity","activity_names"),names(all)[4:69])
@@ -144,7 +140,7 @@ rownames(tidy) <- NULL
 
 #write tidy data to file
 
-write.table(tidy,file="tidy4.txt")
+write.table(tidy,file="tidy.txt")
 
 } else{
 
