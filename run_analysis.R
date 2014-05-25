@@ -126,10 +126,6 @@ for(i in 1:30){
   }
 }
 
-#q<-read.table("features.txt")
-#names(q)<-c("num","variable")
-#names(test)<-q[["variable"]]
-
 #give tidy data cols a name
 
 names(tidy)<-append(c("subject","activity","activity_names"),names(all)[4:69])
