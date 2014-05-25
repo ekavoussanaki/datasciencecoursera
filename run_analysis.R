@@ -40,7 +40,7 @@ train_new1<-train[ ,grep("mean",names(train))]
 
 train_new1<-train_new1[ ,-grep("meanFreq",names(train_new1))]
 
-train_new2<-train[ ,grepl("std",names(train))]
+train_new2<-train[ ,grep("std",names(train))]
 
 train_new<-data.frame(train_new1,train_new2)
 
@@ -83,7 +83,7 @@ test_new1<-test[ ,grep("mean",names(test))]
 
 test_new1<-test_new1[ ,-grep("meanFreq",names(test_new1))]
 
-test_new2<-test[ ,grepl("std",names(test))]
+test_new2<-test[ ,grep("std",names(test))]
 
 test_new<-data.frame(test_new1,test_new2)
 
@@ -144,7 +144,7 @@ rownames(tidy) <- NULL
 
 #write tidy data to file
 
-write.table(tidy,file="tidy4.txt")
+write.table(tidy,file="tidy.txt")
 
 } else{
 
