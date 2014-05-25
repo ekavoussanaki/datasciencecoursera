@@ -13,7 +13,7 @@ run_analysis.R
 ## Cons:
 
 * Its probably *not* the most elaborate coding you will see
-* It might be rather slow on most computers :P - but not *too* slow
+* It might be rather slow on some computers :P - but not *too* slow and not on *every* computer
 
 For any concerns, please feel free to contact me :)
 
