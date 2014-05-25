@@ -1,6 +1,6 @@
 #check if files exist within directory
 
-workingDir<-".";
+workingDir<-"./UCI HAR Dataset/";
 
 if(file.exists(workingDir)){
 
